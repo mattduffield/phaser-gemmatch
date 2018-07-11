@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
   <head>
-    <title>\${projectName}</title>
+    <title>gemmatch</title>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -49,13 +49,9 @@
       }(window.location))
     </script>
   </head>
-  <body aurelia-app="main">
-    <h1 class="loading">Loading...</h1>
-
+  <body>
+    <div id="game_div"> </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/phaser-ce/2.11.0/phaser.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
-    <script src="https://unpkg.com/systemjs@0.19.41/dist/system.js"></script>
-    <script src="systemjs.config.js"></script>
-    <script src="index.dev.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
