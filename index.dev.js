@@ -190,7 +190,5 @@ buildDependencyMap().then(response => {
     navigator.serviceWorker.register('./service-worker-dev.js');
   }
 
-  System.import('aurelia-loader-default')
-    .then(({ DefaultLoader }) => patchDefaultLoader(DefaultLoader))
-    .then(() => System.import('aurelia-bootstrapper'));
+  System.import('main');
 });
